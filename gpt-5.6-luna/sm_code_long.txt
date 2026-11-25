@@ -1,0 +1,12 @@
+```python
+rule1 = Init('Customer signs up')
+rule2 = Response('Customer signs up', 'Generate account')
+rule3 = Response('Generate account', 'Assign access')
+rule4 = Response('Generate account', 'Set automatic triggers for billing cycles')
+rule5 = Response('Customer submits cancellation request', 'Deactivate subscription')
+rule6 = Response('Customer submits cancellation request', 'Settle final account balance')
+rule7 = Precedence('Customer submits cancellation request', 'Deactivate subscription')
+rule8 = Precedence('Customer submits cancellation request', 'Settle final account balance')
+rule9 = NotCoExistence('Apply refund', 'Apply charges')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9]
+```

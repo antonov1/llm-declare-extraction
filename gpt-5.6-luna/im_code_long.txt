@@ -1,0 +1,22 @@
+```python
+rule1 = Init('Report incident')
+rule2 = Response('Report incident', 'Log report into tracking system')
+rule3 = Response('Log report into tracking system', 'Assign report to appropriate team')
+rule4 = Response('Assign report to appropriate team', 'Gather necessary information')
+rule5 = Response('Assign report to appropriate team', 'Identify cause of incident')
+rule6 = Response('Gather necessary information', 'Propose corrective actions')
+rule7 = Response('Identify cause of incident', 'Propose corrective actions')
+rule8 = Precedence('Propose corrective actions', 'Implement fix')
+rule9 = Precedence('Propose corrective actions', 'Conduct training')
+rule10 = Precedence('Propose corrective actions', 'Change policy')
+rule11 = NotCoExistence('Implement fix', 'Conduct training')
+rule12 = NotCoExistence('Implement fix', 'Change policy')
+rule13 = NotCoExistence('Conduct training', 'Change policy')
+rule14 = Response('Implement fix', 'Conduct follow-up')
+rule15 = Response('Conduct training', 'Conduct follow-up')
+rule16 = Response('Change policy', 'Conduct follow-up')
+rule17 = Response('Conduct follow-up', 'Close incident report')
+rule18 = Response('Close incident report', 'Notify all stakeholders')
+rule19 = End('Notify all stakeholders')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19]
+```

@@ -1,0 +1,18 @@
+```python
+rule1 = Init('Login')
+rule2 = End('Deliver items')
+rule3 = Existence('Select items')
+rule4 = Existence('Set payment method')
+rule5 = Existence('Select free reward')
+rule6 = Precedence('Login', 'Select items')
+rule7 = Precedence('Login', 'Set payment method')
+rule8 = Precedence('Select items', 'Select free reward')
+rule9 = Precedence('Select items', 'Pay')
+rule10 = Precedence('Set payment method', 'Pay')
+rule11 = Precedence('Select items', 'Complete installment agreement')
+rule12 = Precedence('Set payment method', 'Complete installment agreement')
+rule13 = NotCoExistence('Pay', 'Complete installment agreement')
+rule14 = Response('Return items', 'Deliver items')
+rule15 = Precedence('Deliver items', 'Return items')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15]
+```

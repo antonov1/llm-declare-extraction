@@ -1,0 +1,19 @@
+```python
+rule1 = Init('Place order')
+rule2 = Response('Place order', 'Record order details')
+rule3 = Response('Record order details', 'Process payment')
+rule4 = Response('Process payment', 'Check stock availability')
+rule5 = Response('Initiate back-order', 'Inform customer about delay')
+rule6 = Response('Initiate back-order', 'Receive back-order')
+rule7 = Response('Pick items from warehouse', 'Perform quality control checks')
+rule8 = Response('Perform quality control checks', 'Package items')
+rule9 = Precedence('Package items', 'Dispatch order')
+rule10 = Precedence('Prepare shipping documents and labels', 'Dispatch order')
+rule11 = Response('Dispatch order', 'Send shipping confirmation to customer')
+rule12 = Response('Dispatch order', 'Update inventory levels')
+rule13 = ChainResponse('Confirm delivery', 'Send follow-up email')
+rule14 = Response('Customer reports issue', 'Send return shipping label')
+rule15 = Response('Send return shipping label', 'Receive returned items')
+rule16 = Response('Receive returned items', 'Inspect returned items')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16]
+```

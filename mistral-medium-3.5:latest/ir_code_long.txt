@@ -1,0 +1,21 @@
+```python
+rule1 = Init('Check current inventory level')
+rule2 = Existence('Check current inventory level')
+rule3 = RespondedExistence('Check current inventory level', 'Send an automated alert')
+rule4 = RespondedExistence('Check current inventory level', 'Send a manual alert')
+rule5 = NotCoExistence('Send an automated alert', 'Send a manual alert')
+rule6 = Response('Send an automated alert', 'Place order with suppliers')
+rule7 = Response('Send a manual alert', 'Place order with suppliers')
+rule8 = Response('Place order with suppliers', 'Update inventory system with expected delivery dates')
+rule9 = Response('Place order with suppliers', 'Receive stock')
+rule10 = Response('Receive stock', 'Inspect stock for quality')
+rule11 = Response('Inspect stock for quality', 'Record stock in system')
+rule12 = Response('Record stock in system', 'Place stock on shelves')
+rule13 = Response('Record stock in system', 'Place stock in storage')
+rule14 = Response('Place stock on shelves', 'Update inventory levels')
+rule15 = Response('Place stock in storage', 'Update inventory levels')
+rule16 = End('Update inventory levels')
+rule17 = Existence('Update inventory levels')
+rule18 = AtMostOnce('Update inventory levels')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18]
+```

@@ -1,0 +1,11 @@
+```python
+rule1 = Init('Define campaign objectives')
+rule2 = Precedence('Create content', 'Launch campaign')
+rule3 = Precedence('Design visuals', 'Launch campaign')
+rule4 = Precedence('Select promotion channels', 'Launch campaign')
+rule5 = Response('Launch campaign', 'Track performance in real-time')
+rule6 = Response('Launch campaign', 'Campaign period ends')
+rule7 = Response('Launch campaign', 'Analyze performance for future optimization')
+rule8 = Precedence('Collect leads in CRM system', 'Sales teams follows up on leads')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8]
+```

@@ -1,0 +1,18 @@
+{
+    "long" : "The process starts when a company schedules a compliance audit for regulations such as ISO standards, safety protocols, or environmental guidelines. Internal teams prepare documentation, gather evidence, and conduct a self-assessment before the external audit. Auditors review the company's processes and identify any gaps or issues. After making the necessary corrections or improvements, the company undergoes a final audit. If all criteria are met, the company is awarded certification, and the process concludes with the issuance of official documents.",
+    "med" : "The process begins when a company schedules a compliance audit for standards like ISO, safety, or environmental regulations. Internal teams prepare by gathering documentation, evidence, and conducting a self-assessment. Auditors then review the processes, identifying any gaps. After addressing corrections, the company undergoes a final audit. If compliant, certification is awarded, concluding with official document issuance.",
+    "short" : "A company undergoes a compliance audit involving internal preparation, external review, and final certification upon meeting regulatory standards.",
+    "activities" : [
+    "Schedule compliance audit",
+    "Prepare documentation",
+    "Gather evidence",
+    "Conduct self-assessment",
+    "Conduct external audit",
+    "Identify gaps or issues",
+    "Make necessary corrections or improvements",
+    "Conduct final audit",
+    "Award certification",
+    "Issue official documents"
+    ]
+
+}

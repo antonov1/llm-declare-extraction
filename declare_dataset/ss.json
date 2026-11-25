@@ -1,0 +1,19 @@
+{
+    "long" : "The process begins when a company identifies the need for a new supplier or vendor. The procurement team issues a request for proposals (RFP) and receives responses from various suppliers. Each proposal is evaluated based on criteria like cost, quality, and delivery time. The team may also conduct site visits or interviews with suppliers. After careful analysis, a supplier is selected, and contract negotiations begin. Once both parties agree on the terms, the contract is signed. The process ends when the supplier is officially onboarded, and the contract is executed.",
+    "med" : "The process starts when a company identifies the need for a new supplier. The procurement team issues an RFP and reviews supplier responses, evaluating each on cost, quality, and delivery time. Site visits or interviews may be conducted. After analysis, a supplier is chosen, and contract negotiations begin. Once terms are agreed upon, the contract is signed. The process concludes with the supplier's onboarding and contract execution.",
+    "short" : "A company selects and onboards a new supplier by issuing an RFP, evaluating proposals, and finalizing a contract.",
+
+    "activities" : [
+    "Identify need for new supplier or vendor",
+    "Issue request for proposals (RFP)",
+    "Receive supplier proposals",
+    "Evaluate proposal",
+    "Conduct site visit",
+    "Conduct interview",
+    "Select supplier",
+    "Begin contract negotiations",
+    "Sign contract",
+    "Onboard supplier",
+    "Execute contract"
+    ]
+}

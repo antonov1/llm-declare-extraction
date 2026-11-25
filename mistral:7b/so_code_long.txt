@@ -1,0 +1,22 @@
+```python
+rule1 = Init('Receive customer inquiry')
+rule2 = Existence('Collect customer information')
+rule3 = Response('Receive customer inquiry', 'Collect customer information')
+rule4 = CoExistence('Collect customer information', 'Address customer concerns or questions')
+rule5 = Response('Collect customer information', 'Address customer concerns or questions')
+rule6 = CoExistence('Address customer concerns or questions', 'Guide customer in selecting product/service')
+rule7 = Response('Address customer concerns or questions', 'Guide customer in selecting product/service')
+rule8 = Existence('Guide customer in selecting product/service')
+rule9 = CoExistence('Guide customer in selecting product/service', 'Provide quote')
+rule10 = Response('Guide customer in selecting product/service', 'Provide quote')
+rule11 = AtMostOnce('Provide quote')
+rule12 = Existence('Provide quote')
+rule13 = CoExistence('Provide quote', 'Record order in system')
+rule14 = Response('Provide quote', 'Record order in system')
+rule15 = End('Record order in system')
+rule16 = Precedence('Record order in system', 'Send order confirmation to customer')
+rule17 = ChainResponse('Record order in system', 'Send order confirmation to customer')
+rule18 = Existence('Send order confirmation to customer')
+rule19 = End('Send order confirmation to customer')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19]
+```

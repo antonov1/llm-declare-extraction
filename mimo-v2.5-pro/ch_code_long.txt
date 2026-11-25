@@ -1,0 +1,14 @@
+```python
+rule1 = Init('File complaint')
+rule2 = End('Provide feedback')
+rule3 = ChainResponse('File complaint', 'Log complaint')
+rule4 = ChainResponse('Log complaint', 'Assign complaint to relevant department')
+rule5 = Precedence('Assign complaint to relevant department', 'Review complaint details')
+rule6 = Precedence('Review complaint details', 'Approve and notify customer')
+rule7 = Precedence('Review complaint details', 'Reject and notify customer')
+rule8 = Response('Approve and notify customer', 'Process reimbursement')
+rule9 = Response('Process reimbursement', 'Resolve complaint')
+rule10 = ChainResponse('Reject and notify customer', 'Resolve complaint')
+rule11 = Response('Resolve complaint', 'Provide feedback')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11]
+```

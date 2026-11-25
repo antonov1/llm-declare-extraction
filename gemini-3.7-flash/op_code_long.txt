@@ -1,0 +1,8 @@
+```python
+rule1 = Init('Login')
+rule2 = CoExistence('Select items', 'Set payment method')
+rule3 = NotCoExistence('Pay', 'Complete installment agreement')
+rule4 = Response('Select items', 'Select free reward')
+rule5 = Response('Return items', 'Deliver items')
+result = [rule1, rule2, rule3, rule4, rule5]
+```

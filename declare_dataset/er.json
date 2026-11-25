@@ -1,0 +1,23 @@
+{
+    "long" : "This process kicks off when a department identifies the need for a new hire. HR creates a job description and posts it on job boards. Resumes are collected and screened, followed by initial phone interviews. Selected candidates are invited for in-person or virtual interviews depending on each candidate's preference. Once a candidate is chosen, an offer is extended, and salary negotiations may take place. After the offer is accepted, the onboarding process begins, including paperwork, orientation, and training. The process concludes once all onboarding steps are completed and the new hire is fully integrated into the team.",
+    "med" : "When a department identifies a hiring need, HR drafts and posts a job description. Resumes are screened, and initial phone interviews are conducted. Chosen candidates attend in-person or virtual interviews. After selecting a candidate, an offer is made, with potential salary negotiations. Upon acceptance, onboarding starts, covering paperwork, orientation, and training. The process ends once onboarding is complete, and the new hire is integrated into the team.",
+    "short" : "The hiring process involves creating a job posting, screening candidates, conducting interviews, extending an offer, and completing onboarding for full integration.",
+    "activities" : [
+    "Identify need for new hire",
+    "Create job description",
+    "Post job description",
+    "Collect resumes",
+    "Screen resumes",
+    "Conduct initial phone interviews",
+    "Invite candidates for interviews",
+    "Conduct an in-person interview",
+    "Conduct a virtual interview",
+    "Choose candidate",
+    "Extend offer",
+    "Negotiate salary",
+    "Begin onboarding process",
+    "Complete paperwork",
+    "Complete orientation",
+    "Complete training"
+]
+}

@@ -1,0 +1,11 @@
+```python
+rule1 = Response('Customer places order online', 'Generate and send order confirmation')
+rule2 = Response('Customer places order over the phone', 'Generate and send order confirmation')
+rule3 = Precedence('Pick and pack items', 'Hand over order to logistics provider')
+rule4 = Precedence('Generate shipping label', 'Hand over order to logistics provider')
+rule5 = Response('Hand over order to logistics provider', 'Send tracking information to customer')
+rule6 = Response('Send tracking information to customer', 'Monitor shipment')
+rule7 = Response('Monitor shipment', 'Successful delivery')
+rule8 = Precedence('Successful delivery', 'Process customer feedback or returns')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8]
+```

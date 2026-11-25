@@ -1,0 +1,17 @@
+{
+    "long" : "This process starts with a department outlining its objectives for the upcoming period, such as hiring, equipment needs, or marketing efforts. The team drafts a plan that includes cost estimates and justifications for the budget requested. The plan is first reviewed in a strategic alignment meeting to ensure it aligns with broader organizational goals. Following this, the finance department performs a detailed review to assess the budget's feasibility. The plan may undergo several rounds of review and possible adjustments based on feedback from these reviews. Each adjustment is documented and approved by necessary stakeholders. Once the final version of the budget is approved, the budget is officially allocated to the department. The process ends when the budget is distributed, and the department begins implementing its plan.",
+    "med" : "The process begins with a department outlining objectives like hiring, equipment needs, or marketing. The team drafts a plan with cost estimates and justifications, which is reviewed in a strategic meeting to align with organizational goals. Next, the finance department assesses budget feasibility, leading to possible adjustments. Each change is documented and approved by stakeholders. After final approval, the budget is allocated, ending the process as the department begins implementing its plan.",
+    "short" : "A department drafts a budget plan aligned with organizational goals, undergoes multiple reviews and adjustments, and, upon final approval, receives allocated funds to implement its objectives.",
+    "activities" : [
+    "Outline objectives",
+    "Draft plan",
+    "Conduct strategic alignment meeting",
+    "Review budget feasibility",
+    "Provide feedback",
+    "Adjust Plan",
+    "Documented and approve adjustment",
+    "Approve final budget",
+    "Distribute budget",
+    "Implement plan"
+    ]
+}

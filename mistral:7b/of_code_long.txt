@@ -1,0 +1,13 @@
+```python
+rule1 = Init('Customer places order online')
+rule2 = Init('Customer places order over the phone')
+rule3 = Existence('Generate and send order confirmation')
+rule4 = CoExistence('Pick and pack items', 'Generate shipping label')
+rule5 = NotCoExistence('Customer places order online', 'Customer places order over the phone')
+rule6 = Precedence('Generate and send order confirmation', 'Hand over order to logistics provider')
+rule7 = ChainPrecedence('Hand over order to logistics provider', 'Monitor shipment')
+rule8 = End('Successful delivery')
+rule9 = Response('Monitor shipment', 'Send tracking information to customer')
+rule10 = RespondedExistence('Send tracking information to customer', 'Monitor shipment')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10]
+```

@@ -1,0 +1,20 @@
+{
+    "long" : "This process begins when an employee or customer reports an incident, such as a technical issue or workplace safety concern. The report is logged into a tracking system and assigned to the appropriate team for investigation. The team gathers the necessary information and identifies the cause of the incident; these activities may occur in either order, but both are completed before corrective actions are proposed. Depending on the incident, the corrective action may involve implementing a fix, conducting training, or changing a policy. After the selected corrective action is carried out, a follow-up occurs to ensure that the issue will not recur. The incident report is then closed, all stakeholders are notified, and the process ends.",
+    "med" : "An incident report, such as a technical issue or safety concern, is logged in a tracking system and assigned to a team. The team investigates, gathers information, identifies the cause, and suggests corrective actions. The solution—whether a fix, training, or policy update—is implemented. Follow-up ensures the issue won't recur, and the process concludes with the report's closure and stakeholder notification.",
+    "short" : "An incident is reported, logged, assigned for investigation, resolved with corrective actions, followed up to prevent recurrence, and closed with stakeholder notification.",
+    "activities" : [
+    "Report incident",
+    "Log report into tracking system",
+    "Assign report to appropriate team",
+    "Gather necessary information",
+    "Identify cause of incident",
+    "Propose corrective actions",
+    "Implement fix",
+    "Conduct training",
+    "Change policy",
+    "Conduct follow-up",
+    "Close incident report",
+    "Notify all stakeholders"
+    ]
+
+}

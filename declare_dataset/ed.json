@@ -1,0 +1,17 @@
+{
+    "long" : "This process begins with identifying an employee’s development needs or career aspirations. The manager and HR create a personal development plan, which may include training programs, mentorship, or additional responsibilities. The employee works on skill enhancement while receiving feedback and evaluations from supervisors; these activities may occur repeatedly and in varying order. Once sufficient development has taken place, the employee is considered for a promotion or new role, followed by a formal performance review. If the promotion is approved, new responsibilities are assigned, compensation is adjusted, and the employee transitions into the new role. If the promotion is not approved, the process may conclude after the formal performance review.",
+    "med" : "The process starts by identifying an employee’s development needs or career goals. The manager and HR then create a personal development plan, involving training, mentorship, or new responsibilities. The employee works on skill growth, receiving feedback from supervisors. Upon meeting milestones, they are considered for promotion. HR formally reviews performance, and if approved, finalizes the promotion with updated responsibilities and compensation. The process concludes as the employee transitions into the new role.",
+    "short" : "A personal development plan is created, skill enhancement is supported, and after milestones are met, the employee is reviewed for a potential promotion with formal approval and compensation adjustments.",
+    "activities" : [
+    "Identify development needs or career aspirations",
+    "Create personal development plan",
+    "Work on skill enhancement",
+    "Receive feedback and evaluation from supervisors",
+    "Consider employee for promotion or new role",
+    "Conducts formal performance review",
+    "Approve promotion",
+    "Set new responsibilities",
+    "Adjust compensation",
+    "Transition into new role"
+    ]
+}

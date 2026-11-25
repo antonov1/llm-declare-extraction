@@ -1,0 +1,19 @@
+```python
+rule1 = Init('Receive customer inquiry')
+rule2 = End('Send order confirmation to customer')
+rule3 = Existence('Collect customer information')
+rule4 = Existence('Address customer concerns or questions')
+rule5 = Existence('Guide customer in selecting product/service')
+rule6 = Existence('Provide quote')
+rule7 = Existence('Place order')
+rule8 = Existence('Record order in system')
+rule9 = Existence('Send order confirmation to customer')
+rule10 = Response('Receive customer inquiry', 'Collect customer information')
+rule11 = Response('Receive customer inquiry', 'Address customer concerns or questions')
+rule12 = Response('Address customer concerns or questions', 'Guide customer in selecting product/service')
+rule13 = Response('Guide customer in selecting product/service', 'Provide quote')
+rule14 = Response('Provide quote', 'Place order')
+rule15 = Response('Place order', 'Record order in system')
+rule16 = Response('Record order in system', 'Send order confirmation to customer')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16]
+```

@@ -1,0 +1,14 @@
+```python
+rule1 = Init('File complaint')
+rule2 = Existence('Log complaint')
+rule3 = CoExistence('Log complaint', 'Assign complaint to relevant department')
+rule4 = Precedence('Assign complaint to relevant department', 'Review complaint details')
+rule5 = Existence('Review complaint details')
+rule6 = CoExistence('Review complaint details', 'Resolve complaint')
+rule7 = RespondedExistence('Assign complaint to relevant department', 'Approve and notify customer')
+rule9 = ChainResponse('Resolve complaint', 'Provide feedback')
+rule10 = NotCoExistence('Approve and notify customer', 'Reject and notify customer')
+rule11 = CoExistence('Approve and notify customer', 'Process reimbursement')
+rule13 = End('File complaint')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule9, rule10, rule11, rule13]
+```

@@ -1,0 +1,23 @@
+```python
+rule1 = Init('Identify need for new hire')
+rule2 = Precedence('Identify need for new hire', 'Create job description')
+rule3 = Precedence('Create job description', 'Post job description')
+rule4 = Precedence('Post job description', 'Collect resumes')
+rule5 = Precedence('Collect resumes', 'Screen resumes')
+rule6 = Precedence('Screen resumes', 'Conduct initial phone interviews')
+rule7 = Precedence('Conduct initial phone interviews', 'Invite candidates for interviews')
+rule8 = Precedence('Invite candidates for interviews', 'Conduct an in-person interview')
+rule9 = Precedence('Invite candidates for interviews', 'Conduct a virtual interview')
+rule10 = Precedence('Conduct an in-person interview', 'Choose candidate')
+rule11 = Precedence('Conduct a virtual interview', 'Choose candidate')
+rule12 = Response('Choose candidate', 'Extend offer')
+rule13 = Precedence('Extend offer', 'Negotiate salary')
+rule14 = Precedence('Extend offer', 'Begin onboarding process')
+rule15 = Precedence('Begin onboarding process', 'Complete paperwork')
+rule16 = Precedence('Begin onboarding process', 'Complete orientation')
+rule17 = Precedence('Begin onboarding process', 'Complete training')
+rule18 = End('Complete training')
+rule19 = CoExistence('Conduct an in-person interview', 'Conduct a virtual interview')
+rule20 = NotCoExistence('Conduct an in-person interview', 'Conduct a virtual interview')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19, rule20]
+```

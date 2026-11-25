@@ -1,0 +1,11 @@
+```python
+rule1 = Init('Identify development needs or career aspirations')
+rule2 = Precedence('Identify development needs or career aspirations', 'Create personal development plan')
+rule3 = Response('Create personal development plan', 'Consider employee for promotion or new role')
+rule4 = Response('Consider employee for promotion or new role', 'Conducts formal performance review')
+rule5 = Response('Conducts formal performance review', 'Approve promotion')
+rule6 = Response('Approve promotion', 'Set new responsibilities')
+rule7 = Response('Set new responsibilities', 'Adjust compensation')
+rule8 = Response('Adjust compensation', 'Transition into new role')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8]
+```

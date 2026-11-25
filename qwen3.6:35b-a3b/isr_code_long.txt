@@ -1,0 +1,11 @@
+```python
+rule1 = Init('Submit IT solution request')
+rule2 = Precedence('Submit IT solution request', 'Assess compatibility')
+rule3 = Precedence('Submit IT solution request', 'Evaluate cost and resource needs')
+rule4 = Precedence('Assess compatibility', 'Procure necessary tools or licenses')
+rule5 = Precedence('Evaluate cost and resource needs', 'Procure necessary tools or licenses')
+rule6 = Precedence('Procure necessary tools or licenses', 'Install the solution')
+rule7 = Precedence('Install the solution', 'Test solution')
+rule8 = Response('Test solution', 'Roll out solution to requesting department')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8]
+```

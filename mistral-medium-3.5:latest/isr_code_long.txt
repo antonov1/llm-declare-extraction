@@ -1,0 +1,22 @@
+```python
+rule1 = Init('Submit IT solution request')
+rule2 = Existence('Submit IT solution request')
+rule3 = AtMostOnce('Submit IT solution request')
+rule4 = Precedence('Submit IT solution request', 'Assess compatibility')
+rule5 = Precedence('Submit IT solution request', 'Evaluate cost and resource needs')
+rule6 = Response('Assess compatibility', 'Evaluate cost and resource needs')
+rule7 = Precedence('Evaluate cost and resource needs', 'Procure necessary tools or licenses')
+rule8 = Precedence('Procure necessary tools or licenses', 'Install the solution')
+rule9 = Precedence('Install the solution', 'Test solution')
+rule10 = Precedence('Test solution', 'Roll out solution to requesting department')
+rule11 = Response('Test solution', 'Roll out solution to requesting department')
+rule12 = AtMostOnce('Roll out solution to requesting department')
+rule13 = AtMostOnce('Provide support for troubleshooting')
+rule14 = AtMostOnce('Procure necessary tools or licenses')
+rule15 = AtMostOnce('Assess compatibility')
+rule16 = AtMostOnce('Install the solution')
+rule17 = AtMostOnce('Test solution')
+rule18 = AtMostOnce('Evaluate cost and resource needs')
+rule19 = AtMostOnce('Provide training')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19]
+```

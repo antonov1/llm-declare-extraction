@@ -1,0 +1,23 @@
+```python
+rule1 = Init('Identify idea for new product or improvement')
+rule2 = Response('Identify idea for new product or improvement', 'Conduct initial research')
+rule3 = Response('Conduct initial research', 'Conduct feasibility studies')
+rule4 = Response('Conduct feasibility studies', 'Draft design concepts')
+rule5 = Response('Draft design concepts', 'Select promising design')
+rule6 = Response('Select promising design', 'Build prototype')
+rule7 = Response('Build prototype', 'Test functionality')
+rule8 = Response('Build prototype', 'Test safety')
+rule9 = Response('Build prototype', 'Test market potential')
+rule10 = Precedence('Test functionality', 'Collect feedback from testing phase')
+rule11 = Precedence('Test safety', 'Collect feedback from testing phase')
+rule12 = Precedence('Test market potential', 'Collect feedback from testing phase')
+rule13 = Precedence('Collect feedback from testing phase', 'Refine prototype')
+rule14 = Response('Refine prototype', 'Test functionality')
+rule15 = Response('Refine prototype', 'Test safety')
+rule16 = Response('Refine prototype', 'Test market potential')
+rule17 = Response('Refine prototype', 'Collect feedback from testing phase')
+rule18 = Precedence('Collect feedback from testing phase', 'Approve prototype for further development')
+rule19 = Precedence('Collect feedback from testing phase', 'Discard prototype')
+rule20 = NotCoExistence('Approve prototype for further development', 'Discard prototype')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19, rule20]
+```

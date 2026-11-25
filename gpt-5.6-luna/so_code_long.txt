@@ -1,0 +1,12 @@
+```python
+rule1 = Init('Receive customer inquiry')
+rule2 = End('Send order confirmation to customer')
+rule3 = Response('Receive customer inquiry', 'Collect customer information')
+rule4 = Response('Collect customer information', 'Address customer concerns or questions')
+rule5 = Response('Address customer concerns or questions', 'Guide customer in selecting product/service')
+rule6 = Response('Guide customer in selecting product/service', 'Provide quote')
+rule7 = Response('Provide quote', 'Place order')
+rule8 = Response('Place order', 'Record order in system')
+rule9 = Response('Record order in system', 'Send order confirmation to customer')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9]
+```

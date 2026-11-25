@@ -1,0 +1,15 @@
+```python
+rule1 = Init('File complaint')
+rule2 = Response('File complaint', 'Log complaint')
+rule3 = Response('Log complaint', 'Assign complaint to relevant department')
+rule4 = Response('Assign complaint to relevant department', 'Review complaint details')
+rule5 = Response('Review complaint details', 'Approve and notify customer')
+rule6 = Response('Review complaint details', 'Reject and notify customer')
+rule7 = Response('Approve and notify customer', 'Process reimbursement')
+rule8 = Response('Approve and notify customer', 'Resolve complaint')
+rule9 = Response('Reject and notify customer', 'Resolve complaint')
+rule10 = Response('Process reimbursement', 'Resolve complaint')
+rule11 = Response('Resolve complaint', 'Provide feedback')
+rule12 = End('Provide feedback')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12]
+```

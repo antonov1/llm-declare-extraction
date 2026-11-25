@@ -1,0 +1,20 @@
+```python
+rule1 = Init('Customer signs up')
+rule2 = Precedence('Customer signs up', 'Generate account')
+rule3 = Existence('Generate account')
+rule4 = Precedence('Generate account', 'Assign access')
+rule5 = Precedence('Generate account', 'Set automatic triggers for billing cycles')
+rule6 = Existence('Assign access')
+rule7 = Existence('Set automatic triggers for billing cycles')
+rule8 = Existence('Customer submits cancellation request')
+rule9 = Precedence('Customer submits cancellation request', 'Apply refund')
+rule10 = Precedence('Customer submits cancellation request', 'Apply charges')
+rule11 = Precedence('Customer submits cancellation request', 'Deactivate subscription')
+rule12 = Precedence('Customer submits cancellation request', 'Settle final account balance')
+rule13 = Existence('Apply refund')
+rule14 = Existence('Apply charges')
+rule15 = Existence('Deactivate subscription')
+rule16 = Existence('Settle final account balance')
+rule17 = End('Settle final account balance')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17]
+```

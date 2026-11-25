@@ -1,0 +1,13 @@
+```python
+rule1 = Init('Identify need for new supplier or vendor')
+rule2 = Response('Issue request for proposals (RFP)', 'Receive supplier proposals')
+rule3 = Response('Receive supplier proposals', 'Evaluate proposal')
+rule4 = Response('Evaluate proposal', 'Select supplier')
+rule5 = Response('Select supplier', 'Begin contract negotiations')
+rule6 = Response('Begin contract negotiations', 'Sign contract')
+rule7 = Response('Sign contract', 'Onboard supplier')
+rule8 = Response('Sign contract', 'Execute contract')
+rule9 = End('Onboard supplier')
+rule10 = End('Execute contract')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10]
+```

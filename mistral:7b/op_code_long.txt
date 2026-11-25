@@ -1,0 +1,13 @@
+```python
+rule1 = AtMostOnce('Pay')
+rule2 = AtMostOnce('Complete installment agreement')
+rule3 = CoExistence('Select items', 'Set payment method')
+rule4 = Init('Login')
+rule5 = Existence('Deliver items')
+rule6 = ChainResponse('Return items', 'Deliver items')
+rule7 = Precedence('Login', 'Select items')
+rule8 = Response('Pay', 'Deliver items')
+rule9 = NotCoExistence('Pay', 'Complete installment agreement')
+rule10 = Existence('Select free reward')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10]
+```

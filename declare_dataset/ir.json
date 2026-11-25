@@ -1,0 +1,18 @@
+{
+    "long" : "This process begins with monitoring inventory levels in a warehouse or store. When stock reaches a predefined threshold, an automated alert or manual check signals the need to reorder. The procurement team then places an order with suppliers, considering factors like cost, delivery time, and supplier reliability. Once the order is placed, the inventory system updates with expected delivery dates. Upon receiving the stock, it is inspected for quality, recorded in the system, and placed on shelves or in storage. The process ends when the inventory levels are updated after the restock is complete.",
+    "med" : "The process starts with monitoring inventory levels. When stock hits a set threshold, an alert signals the need to reorder. The procurement team orders from suppliers, factoring in cost, delivery time, and reliability. Once ordered, the inventory system logs the expected delivery. On receiving the stock, it's quality-checked, recorded, and stored. The process concludes with inventory levels updated post-restock.",
+    "short" : "Inventory is monitored, reordered when low, ordered by procurement, updated in the system upon arrival, inspected, stored, and restocked to update levels.",
+    "activities" : [
+    "Check current inventory level",
+    "Send an automated alert",
+    "Send a manual alert",
+    "Place order with suppliers",
+    "Update inventory system with expected delivery dates",
+    "Receive stock",
+    "Inspect stock for quality",
+    "Record stock in system",
+    "Place stock on shelves",
+    "Place stock in storage",
+    "Update inventory levels"
+]
+}

@@ -1,0 +1,14 @@
+```python
+r1 = Init('Define campaign objectives')
+r2 = End('Analyze performance for future optimization')
+r3 = Precedence('Define campaign objectives', 'Launch campaign')
+r4 = Precedence('Create content', 'Launch campaign')
+r5 = Precedence('Design visuals', 'Launch campaign')
+r6 = Precedence('Select promotion channels', 'Launch campaign')
+r7 = Response('Launch campaign', 'Track performance in real-time')
+r8 = Response('Launch campaign', 'Collect leads in CRM system')
+r9 = Response('Collect leads in CRM system', 'Sales teams follows up on leads')
+r10 = Response('Launch campaign', 'Campaign period ends')
+r11 = Response('Launch campaign', 'Analyze performance for future optimization')
+result = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11]
+```

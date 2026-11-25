@@ -1,0 +1,10 @@
+```python
+rule1 = Init('Customer searches for ticket')
+rule2 = Response('Customer searches for ticket', 'Select route')
+rule3 = Response('Select route', 'Select date and time')
+rule4 = Response('Select date and time', 'Provide personal information')
+rule5 = Response('Provide personal information', 'Provide payment details')
+rule6 = Response('Provide payment details', 'Generate ticket')
+rule7 = Response('Generate ticket', 'Update seat inventory')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7]
+```

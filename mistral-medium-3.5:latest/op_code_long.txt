@@ -1,0 +1,23 @@
+```python
+rule1 = Init('Login')
+rule2 = Existence('Login')
+rule3 = Existence('Select items')
+rule4 = Existence('Set payment method')
+rule5 = Existence('Pay')
+rule6 = Existence('Complete installment agreement')
+rule7 = Existence('Select free reward')
+rule8 = Existence('Deliver items')
+rule9 = Precedence('Login', 'Select items')
+rule10 = Precedence('Login', 'Set payment method')
+rule11 = CoExistence('Select items', 'Set payment method')
+rule12 = Precedence('Select items', 'Pay')
+rule13 = Precedence('Select items', 'Complete installment agreement')
+rule14 = Precedence('Select items', 'Select free reward')
+rule15 = Precedence('Pay', 'Deliver items')
+rule16 = Precedence('Complete installment agreement', 'Deliver items')
+rule17 = Precedence('Deliver items', 'Return items')
+rule18 = Precedence('Return items', 'Deliver items')
+rule19 = NotCoExistence('Pay', 'Complete installment agreement')
+rule20 = AtMostOnce('Login')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19, rule20]
+```

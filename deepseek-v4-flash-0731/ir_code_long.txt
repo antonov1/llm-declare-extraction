@@ -1,0 +1,13 @@
+```python
+rule1 = Init('Check current inventory level')
+rule2 = Response('Check current inventory level', 'Place order with suppliers')
+rule3 = Response('Send an automated alert', 'Place order with suppliers')
+rule4 = Response('Place order with suppliers', 'Update inventory system with expected delivery dates')
+rule5 = Response('Update inventory system with expected delivery dates', 'Receive stock')
+rule6 = Response('Receive stock', 'Inspect stock for quality')
+rule7 = Response('Inspect stock for quality', 'Record stock in system')
+rule8 = Precedence('Record stock in system', 'Place stock on shelves')
+rule9 = Precedence('Record stock in system', 'Place stock in storage')
+rule10 = End('Update inventory levels')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10]
+```

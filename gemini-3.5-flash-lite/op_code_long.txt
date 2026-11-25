@@ -1,0 +1,12 @@
+```python
+rule1 = Init('Login')
+rule2 = Precedence('Login', 'Select items')
+rule3 = Precedence('Login', 'Set payment method')
+rule4 = Precedence('Select items', 'Pay')
+rule5 = Precedence('Select items', 'Complete installment agreement')
+rule6 = Precedence('Select items', 'Select free reward')
+rule7 = Precedence('Pay', 'Deliver items')
+rule8 = Precedence('Complete installment agreement', 'Deliver items')
+rule9 = Response('Return items', 'Deliver items')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9]
+```

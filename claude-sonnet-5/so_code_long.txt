@@ -1,0 +1,21 @@
+```python
+init1 = Init('Receive customer inquiry')
+end1 = End('Send order confirmation to customer')
+exist1 = Existence('Receive customer inquiry')
+exist2 = Existence('Collect customer information')
+exist3 = Existence('Provide quote')
+exist4 = Existence('Place order')
+exist5 = Existence('Record order in system')
+exist6 = Existence('Send order confirmation to customer')
+resp1 = Response('Receive customer inquiry', 'Collect customer information')
+resp2 = Response('Collect customer information', 'Address customer concerns or questions')
+resp3 = Response('Address customer concerns or questions', 'Guide customer in selecting product/service')
+resp4 = Response('Guide customer in selecting product/service', 'Provide quote')
+resp5 = Response('Provide quote', 'Place order')
+chain1 = ChainResponse('Place order', 'Record order in system')
+chain2 = ChainResponse('Record order in system', 'Send order confirmation to customer')
+prec1 = Precedence('Provide quote', 'Place order')
+prec2 = Precedence('Place order', 'Record order in system')
+prec3 = Precedence('Record order in system', 'Send order confirmation to customer')
+result = [init1, end1, exist1, exist2, exist3, exist4, exist5, exist6, resp1, resp2, resp3, resp4, resp5, chain1, chain2, prec1, prec2, prec3]
+```

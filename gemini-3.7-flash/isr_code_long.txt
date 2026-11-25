@@ -1,0 +1,5 @@
+```python
+rule1 = Init('Submit IT solution request')
+rule2 = Response('Test solution', 'Roll out solution to requesting department')
+result = [rule1, rule2]
+```

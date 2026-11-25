@@ -1,0 +1,14 @@
+```python
+rule1 = Init('Customer searches for ticket')
+rule2 = Existence('Select route')
+rule3 = CoExistence('Provide personal information', 'Provide payment details')
+rule4 = Precedence('Provide personal information', 'Provide payment details')
+rule5 = AtMostOnce('Select date and time')
+rule6 = RespondedExistence('Generate ticket', 'Send ticket via email')
+rule7 = RespondedExistence('Generate ticket', 'Send ticket via SMS')
+rule8 = End('Customer completes journey')
+rule9 = Precedence('Post-travel feedback or services', 'Customer completes journey')
+rule10 = Response('Send reminder', 'Customer completes journey')
+rule11 = Response('Send instructions', 'Customer completes journey')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11]
+```

@@ -1,0 +1,12 @@
+```python
+rule1 = Init('File complaint')
+rule2 = Response('File complaint', 'Log complaint')
+rule3 = Response('Log complaint', 'Assign complaint to relevant department')
+rule4 = Response('Assign complaint to relevant department', 'Review complaint details')
+rule5 = NotCoExistence('Approve and notify customer', 'Reject and notify customer')
+rule6 = Response('Approve and notify customer', 'Process reimbursement')
+rule7 = Response('Process reimbursement', 'Resolve complaint')
+rule8 = Response('Reject and notify customer', 'Resolve complaint')
+rule9 = Precedence('Resolve complaint', 'Provide feedback')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9]
+```

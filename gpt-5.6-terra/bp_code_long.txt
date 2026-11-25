@@ -1,0 +1,12 @@
+```python
+rule1 = Init('Outline objectives')
+rule2 = Response('Outline objectives', 'Draft plan')
+rule3 = Response('Draft plan', 'Conduct strategic alignment meeting')
+rule4 = Response('Conduct strategic alignment meeting', 'Review budget feasibility')
+rule5 = Response('Provide feedback', 'Adjust Plan')
+rule6 = Response('Adjust Plan', 'Documented and approve adjustment')
+rule7 = Response('Approve final budget', 'Distribute budget')
+rule8 = Response('Distribute budget', 'Implement plan')
+rule9 = End('Implement plan')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9]
+```

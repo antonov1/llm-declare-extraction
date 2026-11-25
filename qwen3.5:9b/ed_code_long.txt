@@ -1,0 +1,20 @@
+```python
+rule1 = Init('Identify development needs or career aspirations')
+rule2 = Existence('Create personal development plan')
+rule3 = Precedence('Create personal development plan', 'Work on skill enhancement')
+rule4 = Precedence('Create personal development plan', 'Receive feedback and evaluation from supervisors')
+rule5 = Response('Work on skill enhancement', 'Conducts formal performance review')
+rule6 = Response('Receive feedback and evaluation from supervisors', 'Conducts formal performance review')
+rule7 = RespondedExistence('Consider employee for promotion or new role', 'Conducts formal performance review')
+rule8 = Precedence('Conducts formal performance review', 'Approve promotion')
+rule9 = Precedence('Approve promotion', 'Set new responsibilities')
+rule10 = Precedence('Set new responsibilities', 'Adjust compensation')
+rule11 = Precedence('Adjust compensation', 'Transition into new role')
+rule12 = NotSuccession('Transition into new role', 'Approve promotion')
+rule13 = NotSuccession('Transition into new role', 'Set new responsibilities')
+rule14 = NotSuccession('Transition into new role', 'Adjust compensation')
+rule15 = NotCoExistence('Set new responsibilities', 'Identify development needs or career aspirations')
+rule16 = NotCoExistence('Adjust compensation', 'Identify development needs or career aspirations')
+rule17 = NotCoExistence('Transition into new role', 'Identify development needs or career aspirations')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17]
+```

@@ -1,0 +1,14 @@
+```python
+rule1 = Init('Identify idea for new product or improvement')
+rule2 = Existence('Conduct feasibility studies')
+rule3 = Existence('Draft design concepts')
+rule4 = CoExistence('Select promising design', 'Build prototype')
+rule5 = Existence('Test safety')
+rule7 = Existence('Test functionality')
+rule8 = NotCoExistence('Test safety', 'Test functionality')
+rule9 = Existence('Refine prototype')
+rule10 = ChainPrecedence('Refine prototype', 'Test market potential')
+rule11 = RespondedExistence('Collect feedback from testing phase', 'Test market potential')
+rule12 = Response('Collect feedback from testing phase', 'Refine prototype')
+result = [rule1, rule2, rule3, rule4, rule5, rule7, rule8, rule9, rule10, rule11, rule12]
+```

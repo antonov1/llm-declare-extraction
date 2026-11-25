@@ -1,0 +1,17 @@
+{
+    "long" : "The process starts when an employee or department submits a request for an IT solution, such as new software or hardware. IT assesses the request, checking for compatibility with existing systems and evaluating cost and resource needs. If approved, IT procures the necessary tools or licenses, installs the solution, and tests it in a controlled environment. After successful testing, the new solution is rolled out to the requesting department. Training may be provided, and IT support remains available for troubleshooting.",
+    "med" : "The process begins when a request for an IT solution, like software or hardware, is submitted. IT assesses compatibility, cost, and resources. If approved, IT procures, installs, and tests the solution in a controlled environment. After successful testing, it is rolled out to the department, with training and ongoing support available as needed.",
+    "short" : "IT assesses, procures, tests, and rolls out requested IT solutions, with support and training as needed.",
+    "activities" : [
+    "Submit IT solution request",
+    "Assess compatibility",
+    "Evaluate cost and resource needs",
+    "Procure necessary tools or licenses",
+    "Install the solution",
+    "Test solution",
+    "Roll out solution to requesting department",
+    "Provide training",
+    "Provide support for troubleshooting"
+
+    ]
+}

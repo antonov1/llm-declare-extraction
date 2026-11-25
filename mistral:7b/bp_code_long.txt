@@ -1,0 +1,15 @@
+```python
+rule1 = Init('Outline objectives')
+rule2 = Existence('Draft plan')
+rule3 = CoExistence('Draft plan', 'Review budget feasibility')
+rule4 = RespondedExistence('Review budget feasibility', 'Adjust Plan')
+rule5 = Response('Adjust Plan', 'Documented and approve adjustment')
+rule6 = End('Approve final budget')
+rule7 = Precedence('Approve final budget', 'Distribute budget')
+rule8 = End('Distribute budget')
+rule9 = Existence('Implement plan')
+rule10 = NotCoExistence('Documented and approve adjustment', 'Implement plan')
+rule11 = Response('Implement plan', 'Provide feedback')
+rule12 = CoExistence('Provide feedback', 'Draft plan')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12]
+```

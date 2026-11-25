@@ -1,0 +1,15 @@
+```python
+rule1 = Init('Guest calls room service')
+rule2 = Response('Guest calls room service', 'Manager takes down the order')
+rule3 = Response('Manager takes down the order', 'Manager submits order ticket to kitchen')
+rule4 = Response('Manager submits order ticket to kitchen', 'Kitchen prepares food')
+rule5 = Response('Manager gives order to sommelier', 'Sommelier fetches wine and prepare alcoholic beverages')
+rule6 = Response('Manager takes down the order', 'Manager assigns order to waiter')
+rule7 = Precedence('Kitchen prepares food', "Waiter delivers order to guest's room")
+rule8 = Precedence('Waiter readies cart', "Waiter delivers order to guest's room")
+rule9 = Response("Waiter delivers order to guest's room", 'Waiter returns to room-service station')
+rule10 = Precedence("Waiter delivers order to guest's room", 'Waiter returns to room-service station')
+rule11 = Response('Waiter returns to room-service station', "Waiter debits guest's account")
+rule12 = Precedence('Waiter returns to room-service station', "Waiter debits guest's account")
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12]
+```

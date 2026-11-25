@@ -1,0 +1,10 @@
+```python
+rule1 = Init('Schedule compliance audit')
+rule2 = Precedence('Prepare documentation', 'Conduct external audit')
+rule3 = Precedence('Gather evidence', 'Conduct external audit')
+rule4 = Precedence('Conduct self-assessment', 'Conduct external audit')
+rule5 = Response('Make necessary corrections or improvements', 'Conduct final audit')
+rule6 = Response('Award certification', 'Issue official documents')
+rule7 = End('Issue official documents')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7]
+```

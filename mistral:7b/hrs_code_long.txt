@@ -1,0 +1,17 @@
+```python
+rule1 = AtMostOnce("Waiter debits guest's account")
+rule2 = Init('Guest calls room service')
+rule3 = RespondedExistence('Manager takes down the order', 'Guest calls room service')
+rule4 = Existence('Manager assigns order to waiter')
+rule5 = CoExistence('Manager submits order ticket to kitchen', 'Manager takes down the order')
+rule6 = Response('Manager gives order to sommelier', 'Manager assigns order to waiter')
+rule7 = CoExistence('Kitchen prepares food', 'Manager submits order ticket to kitchen')
+rule8 = Existence('Sommelier fetches wine and prepare alcoholic beverages')
+rule9 = ChainResponse('Manager gives order to sommelier', 'Sommelier fetches wine and prepare alcoholic beverages')
+rule10 = CoExistence('Waiter prepares nonalcoholic drinks', 'Kitchen prepares food')
+rule11 = Init('Waiter readies cart')
+rule12 = Precedence('Manager assigns order to waiter', 'Waiter readies cart')
+rule13 = End("Waiter delivers order to guest's room")
+rule14 = Response('Waiter returns to room-service station', "Waiter delivers order to guest's room")
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14]
+```

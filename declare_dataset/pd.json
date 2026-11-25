@@ -1,0 +1,20 @@
+{
+    "long" : "The process starts with identifying an idea for a new product or improvement to an existing one. The R&D team conducts initial research and feasibility studies, followed by drafting design concepts. After selecting a promising design, a prototype is built using available materials and resources. The prototype undergoes various tests to assess its functionality, safety, and market potential. Feedback from the testing phase is collected, and the prototype may be refined accordingly. If a refinement is needed, then the testing phase is reinitiated. The process ends when the prototype is either approved for further development or discarded.",
+    "med" : "The process begins with identifying a new product idea or improvement. The R&D team conducts initial research and feasibility studies, then drafts design concepts. A selected design is prototyped with available resources and undergoes tests for functionality, safety, and market potential. Feedback from testing may prompt refinements, and testing is repeated if necessary. The process concludes when the prototype is either approved for further development or discarded.",
+    "short" : "Generate and test a product prototype based on initial research, refining it as needed before final approval or dismissal.",
+    "activities" : [
+    "Identify idea for new product or improvement",
+    "Conduct initial research",
+    "Conduct feasibility studies",
+    "Draft design concepts",
+    "Select promising design",
+    "Build prototype",
+    "Test functionality",
+    "Test safety",
+    "Test market potential",
+    "Collect feedback from testing phase",
+    "Refine prototype",
+    "Approve prototype for further development",
+    "Discard prototype"
+    ]
+}

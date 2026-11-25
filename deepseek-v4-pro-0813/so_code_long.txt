@@ -1,0 +1,17 @@
+```python
+rule1 = Init('Receive customer inquiry')
+rule2 = Response('Receive customer inquiry', 'Collect customer information')
+rule3 = Response('Receive customer inquiry', 'Address customer concerns or questions')
+rule4 = Precedence('Collect customer information', 'Guide customer in selecting product/service')
+rule5 = Precedence('Address customer concerns or questions', 'Guide customer in selecting product/service')
+rule6 = Precedence('Guide customer in selecting product/service', 'Provide quote')
+rule7 = Response('Guide customer in selecting product/service', 'Provide quote')
+rule8 = Precedence('Provide quote', 'Place order')
+rule9 = Response('Provide quote', 'Place order')
+rule10 = Precedence('Place order', 'Record order in system')
+rule11 = Response('Place order', 'Record order in system')
+rule12 = Precedence('Record order in system', 'Send order confirmation to customer')
+rule13 = Response('Record order in system', 'Send order confirmation to customer')
+rule14 = End('Send order confirmation to customer')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14]
+```

@@ -1,0 +1,22 @@
+```python
+rule1 = Init('Define campaign objectives')
+rule2 = Existence('Create content')
+rule3 = Existence('Design visuals')
+rule4 = Existence('Select promotion channels')
+rule5 = Existence('Launch campaign')
+rule6 = Existence('Collect leads in CRM system')
+rule7 = Existence('Campaign period ends')
+rule8 = Existence('Analyze performance for future optimization')
+rule9 = Precedence('Create content', 'Launch campaign')
+rule10 = Precedence('Design visuals', 'Launch campaign')
+rule11 = Precedence('Select promotion channels', 'Launch campaign')
+rule12 = Precedence('Launch campaign', 'Track performance in real-time')
+rule13 = Response('Launch campaign', 'Track performance in real-time')
+rule14 = Precedence('Launch campaign', 'Collect leads in CRM system')
+rule15 = Precedence('Collect leads in CRM system', 'Sales teams follows up on leads')
+rule16 = Precedence('Track performance in real-time', 'Campaign period ends')
+rule17 = Precedence('Track performance in real-time', 'Analyze performance for future optimization')
+rule18 = Precedence('Collect leads in CRM system', 'Campaign period ends')
+rule19 = Precedence('Collect leads in CRM system', 'Analyze performance for future optimization')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18, rule19]
+```

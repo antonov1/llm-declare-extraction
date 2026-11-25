@@ -1,0 +1,19 @@
+{
+    "long" : "This process begins when a customer signs up for a subscription service, entering personal and payment information. The system generates an account, after which access is assigned and automatic billing cycles are configured; these two setup activities may occur in either order. Throughout the subscription, the customer may receive regular updates, product enhancements, or renewal notifications, which can occur repeatedly and in varying order. If the customer decides to cancel, they submit a cancellation request. Depending on the applicable terms, a refund or additional charge may be applied. The cancellation is completed by deactivating the subscription and settling the final account balance, happening in arbitrary order.",
+    "med" : "The process starts when a customer signs up, entering personal and payment details. The system creates an account, grants access, and initiates billing cycles. During the subscription, the customer receives updates, product improvements, or renewal alerts. If canceling, the customer submits a request, which the support team handles, applying any necessary refunds or charges. The process ends with account deactivation and final balance settlement.",
+    "short" : "A customer subscribes to a service, receives updates and billing cycles, and may cancel, with support managing deactivation and final billing.",
+    "activities" : [
+    "Customer signs up",
+    "Generate account",
+    "Assign access",
+    "Set automatic triggers for billing cycles",
+    "Send regular updates",
+    "Send product enhancements",
+    "Send renewal notifications",
+    "Customer submits cancellation request",
+    "Apply refund",
+    "Apply charges",
+    "Deactivate subscription",
+    "Settle final account balance"
+    ]
+}

@@ -1,0 +1,13 @@
+```python
+init = Init('File complaint')
+resp1 = Response('File complaint', 'Log complaint')
+resp2 = Response('Log complaint', 'Assign complaint to relevant department')
+resp3 = Response('Assign complaint to relevant department', 'Review complaint details')
+resp4 = Response('Review complaint details', 'Reject and notify customer')
+resp5 = Response('Review complaint details', 'Approve and notify customer')
+resp6 = Response('Approve and notify customer', 'Process reimbursement')
+resp7 = Response('Process reimbursement', 'Resolve complaint')
+resp8 = Response('Reject and notify customer', 'Resolve complaint')
+resp9 = Response('Resolve complaint', 'Provide feedback')
+result = [init, resp1, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9]
+```

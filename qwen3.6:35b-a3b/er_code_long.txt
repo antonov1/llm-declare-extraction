@@ -1,0 +1,20 @@
+```python
+rule1 = Init('Identify need for new hire')
+rule2 = ChainPrecedence('Create job description', 'Post job description')
+rule3 = ChainPrecedence('Collect resumes', 'Screen resumes')
+rule4 = ChainPrecedence('Screen resumes', 'Conduct initial phone interviews')
+rule5 = Response('Conduct initial phone interviews', 'Invite candidates for interviews')
+rule6 = ChainPrecedence('Invite candidates for interviews', 'Conduct an in-person interview')
+rule7 = ChainPrecedence('Invite candidates for interviews', 'Conduct a virtual interview')
+rule8 = NotCoExistence('Conduct an in-person interview', 'Conduct a virtual interview')
+rule9 = ChainPrecedence('Conduct an in-person interview', 'Choose candidate')
+rule10 = ChainPrecedence('Conduct a virtual interview', 'Choose candidate')
+rule11 = ChainPrecedence('Choose candidate', 'Extend offer')
+rule12 = ChainPrecedence('Extend offer', 'Negotiate salary')
+rule13 = ChainPrecedence('Extend offer', 'Begin onboarding process')
+rule14 = ChainPrecedence('Begin onboarding process', 'Complete paperwork')
+rule15 = ChainPrecedence('Complete paperwork', 'Complete orientation')
+rule16 = ChainPrecedence('Complete orientation', 'Complete training')
+rule17 = End('Complete training')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17]
+```

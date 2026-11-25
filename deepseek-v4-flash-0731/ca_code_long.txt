@@ -1,0 +1,21 @@
+```python
+rule1 = Init('Schedule compliance audit')
+rule2 = End('Issue official documents')
+rule3 = Existence('Conduct self-assessment')
+rule4 = Existence('Prepare documentation')
+rule5 = Existence('Gather evidence')
+rule6 = Existence('Conduct external audit')
+rule7 = Existence('Identify gaps or issues')
+rule8 = Existence('Make necessary corrections or improvements')
+rule9 = Existence('Conduct final audit')
+rule10 = Existence('Award certification')
+rule11 = Precedence('Conduct self-assessment', 'Conduct external audit')
+rule12 = Precedence('Prepare documentation', 'Conduct external audit')
+rule13 = Precedence('Gather evidence', 'Conduct external audit')
+rule14 = Response('Conduct external audit', 'Identify gaps or issues')
+rule15 = Response('Identify gaps or issues', 'Make necessary corrections or improvements')
+rule16 = Response('Make necessary corrections or improvements', 'Conduct final audit')
+rule17 = Precedence('Conduct final audit', 'Award certification')
+rule18 = Response('Award certification', 'Issue official documents')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18]
+```

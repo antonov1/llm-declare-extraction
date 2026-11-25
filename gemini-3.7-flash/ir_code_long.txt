@@ -1,0 +1,8 @@
+```python
+rule1 = Init('Check current inventory level')
+rule2 = Response('Place order with suppliers', 'Update inventory system with expected delivery dates')
+rule3 = Response('Receive stock', 'Inspect stock for quality')
+rule4 = Response('Inspect stock for quality', 'Record stock in system')
+rule5 = End('Update inventory levels')
+result = [rule1, rule2, rule3, rule4, rule5]
+```

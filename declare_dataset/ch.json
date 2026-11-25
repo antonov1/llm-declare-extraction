@@ -1,0 +1,16 @@
+{
+    "long" : "The process begins when a customer files a complaint about a product or service. Customer service logs the complaint and assigns it to the relevant department for investigation. After reviewing the details, the team determines whether the complaint is valid and whether a refund is justified and notifies the customer with the decision. If a refund is approved, the financial team processes the reimbursement. The complaint is marked as resolved once the customer receives the refund or directly after notifying the customer in case the refund was rejected. After resolving the case, customers can provide feedback on their satisfaction.",
+    "med" : "The process starts when a customer files a complaint about a product or service. Customer service logs it and assigns it to the appropriate department for investigation. The team assesses validity and the need for a refund, then notifies the customer of the decision. If approved, the financial team processes the reimbursement. The complaint is marked as resolved once the customer receives the refund or is notified if rejected. Afterward, customers can provide feedback on their satisfaction.",
+    "short" : "The process starts with a customer filing a complaint, followed by investigation, decision on validity and refund eligibility, notification to the customer, and resolution with optional feedback.",
+    "activities" : [
+    "File complaint",
+    "Log complaint",
+    "Assign complaint to relevant department",
+    "Review complaint details",
+    "Approve and notify customer",
+    "Reject and notify customer",
+    "Process reimbursement",
+    "Resolve complaint",
+    "Provide feedback"
+    ]
+}

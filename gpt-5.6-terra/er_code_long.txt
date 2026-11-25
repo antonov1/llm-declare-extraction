@@ -1,0 +1,20 @@
+```python
+rule1 = Init('Identify need for new hire')
+rule2 = Response('Identify need for new hire', 'Create job description')
+rule3 = Response('Create job description', 'Post job description')
+rule4 = Response('Post job description', 'Collect resumes')
+rule5 = Response('Collect resumes', 'Screen resumes')
+rule6 = Response('Screen resumes', 'Conduct initial phone interviews')
+rule7 = Response('Conduct initial phone interviews', 'Invite candidates for interviews')
+rule8 = Precedence('Invite candidates for interviews', 'Conduct an in-person interview')
+rule9 = Precedence('Invite candidates for interviews', 'Conduct a virtual interview')
+rule10 = Response('Invite candidates for interviews', 'Choose candidate')
+rule11 = Response('Choose candidate', 'Extend offer')
+rule12 = Precedence('Extend offer', 'Negotiate salary')
+rule13 = Existence('Begin onboarding process')
+rule14 = Precedence('Extend offer', 'Begin onboarding process')
+rule15 = Response('Begin onboarding process', 'Complete paperwork')
+rule16 = Response('Begin onboarding process', 'Complete orientation')
+rule17 = Response('Begin onboarding process', 'Complete training')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17]
+```

@@ -1,0 +1,15 @@
+{
+    "long" : "Consider a process for purchasing items from an online shop. The user starts an order by logging in to their account. Then, the user simultaneously selects the items to purchase and sets a payment method. Afterward, the user either pays or completes an installment agreement. After selecting the items, the user chooses between multiple options for a free reward. Since the reward value depends on the purchase value, this step is done after selecting the items, but it is independent of the payment activities. Finally, the items are delivered. The user has the right to return items for exchange. Every time items are returned, a new delivery is made.",
+    "med" : "To purchase from an online shop, the user logs in, selects items, and sets a payment method simultaneously. They then pay or arrange an installment plan. After selecting items, they choose a free reward based on purchase value, independent of payment. Items are delivered. Users can return items for exchange; each return triggers a new delivery.",
+    "short" : "The user logs in, selects items and a payment method, optionally chooses a reward, completes payment or an installment agreement, receives delivery, and can return items for exchange with new deliveries made for each return.",
+    "activities" : [
+    "Login",
+    "Select items",
+    "Set payment method",
+    "Pay",
+    "Complete installment agreement",
+    "Select free reward",
+    "Deliver items",
+    "Return items"
+    ]
+}

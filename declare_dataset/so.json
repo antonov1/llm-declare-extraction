@@ -1,0 +1,15 @@
+{
+    "long" : "This process begins when a potential customer inquires about a product or service. Sales staff or customer support collects relevant information and addresses any concerns or questions. If the customer is interested, they are guided through selecting the appropriate product or service. Next, the sales representative provides a quote, and after approval from the customer, the process moves to order placement. The order is then recorded in the system, and the customer receives confirmation of their order. The process ends when the order is successfully placed and confirmed.",
+    "med" : "The process starts when a potential customer inquires about a product or service. Sales staff gather information and address any questions. If the customer shows interest, they are assisted in selecting the right product or service. The sales representative then provides a quote, and upon customer approval, the order is placed. The order is recorded in the system, and the customer receives confirmation, completing the process.",
+    "short" : "The process starts with a customer inquiry, proceeds through product selection, quoting, and order placement, and ends with order confirmation.",
+    "activities" : [
+    "Receive customer inquiry",
+    "Collect customer information",
+    "Address customer concerns or questions",
+    "Guide customer in selecting product/service",
+    "Provide quote",
+    "Place order",
+    "Record order in system",
+    "Send order confirmation to customer"
+    ]
+}

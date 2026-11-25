@@ -1,0 +1,6 @@
+```python
+rule1 = Init('Identify idea for new product or improvement')
+rule2 = Response('Select promising design', 'Build prototype')
+rule3 = NotCoExistence('Approve prototype for further development', 'Discard prototype')
+result = [rule1, rule2, rule3]
+```

@@ -1,0 +1,21 @@
+```python
+rule1 = NotCoExistence('Customer places order online', 'Customer places order over the phone')
+rule2 = ChainResponse('Customer places order online', 'Generate and send order confirmation')
+rule3 = ChainResponse('Customer places order over the phone', 'Generate and send order confirmation')
+rule4 = Precedence('Pick and pack items', 'Hand over order to logistics provider')
+rule5 = Precedence('Generate shipping label', 'Hand over order to logistics provider')
+rule6 = Response('Hand over order to logistics provider', 'Send tracking information to customer')
+rule7 = Response('Send tracking information to customer', 'Monitor shipment')
+rule8 = Response('Monitor shipment', 'Successful delivery')
+rule9 = Precedence('Successful delivery', 'Process customer feedback or returns')
+rule10 = Existence('Generate and send order confirmation')
+rule11 = Existence('Successful delivery')
+rule12 = AtMostOnce('Monitor shipment')
+rule13 = AtMostOnce('Hand over order to logistics provider')
+rule14 = AtMostOnce('Generate and send order confirmation')
+rule15 = AtMostOnce('Send tracking information to customer')
+rule16 = AtMostOnce('Generate shipping label')
+rule17 = AtMostOnce('Pick and pack items')
+rule18 = AtMostOnce('Successful delivery')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15, rule16, rule17, rule18]
+```

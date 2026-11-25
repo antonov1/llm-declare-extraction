@@ -1,0 +1,18 @@
+```python
+rule1 = Init('Customer searches for ticket')
+rule2 = Existence('Customer completes journey')
+rule3 = Response('Customer searches for ticket', 'Select route')
+rule4 = Response('Select route', 'Select date and time')
+rule5 = Response('Select date and time', 'Provide personal information')
+rule6 = Response('Provide personal information', 'Provide payment details')
+rule7 = Response('Provide payment details', 'Generate ticket')
+rule8 = Precedence('Generate ticket', 'Send ticket via email')
+rule9 = Precedence('Generate ticket', 'Send ticket via SMS')
+rule10 = NotCoExistence('Send ticket via email', 'Send ticket via SMS')
+rule11 = Precedence('Generate ticket', 'Update seat inventory')
+rule12 = Response('Generate ticket', 'Customer completes journey')
+rule13 = Precedence('Send reminder', 'Customer completes journey')
+rule14 = Precedence('Send instructions', 'Customer completes journey')
+rule15 = Precedence('Customer completes journey', 'Post-travel feedback or services')
+result = [rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, rule13, rule14, rule15]
+```

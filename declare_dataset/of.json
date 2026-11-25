@@ -1,0 +1,18 @@
+{
+    "long" : "This process begins when a customer places an order either through an online platform or over the phone. The system then automatically generates an order confirmation and sends it to the customer. During order preparation, the warehouse team picks and packs the items and a shipping label is generated; these two activities may occur in either order, but both must be completed before the order is handed over to a logistics provider. Tracking information is then sent to the customer, and the shipment is monitored until it reaches the customer’s address. After successful delivery, the main fulfillment process is complete. Customer feedback or returns may subsequently trigger further actions.",
+    "med" : "The process starts when a customer places an order online or by phone. The system sends an order confirmation to the customer. The warehouse team picks and packs the items, generates a shipping label, and hands the order to a logistics provider. Tracking information is provided to the customer. The shipment is monitored until delivery, at which point the process concludes, though feedback or returns may prompt further actions.",
+    "short" : "The process starts with an order placement, followed by confirmation, picking, packing, shipping, and delivery, with tracking and potential follow-up for feedback or returns.",
+
+    "activities" : [
+    "Customer places order online",
+    "Customer places order over the phone",
+    "Generate and send order confirmation",
+    "Pick and pack items",
+    "Generate shipping label",
+    "Hand over order to logistics provider",
+    "Send tracking information to customer",
+    "Monitor shipment",
+    "Successful delivery",
+    "Process customer feedback or returns"
+    ]
+}
